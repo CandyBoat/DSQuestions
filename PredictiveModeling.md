@@ -19,6 +19,14 @@
 * Minimizing squared error is easy to solve becuase the derivatives of the objective function are continuous, we can set the derivative to be 0 then get the minimizer. While we do not have closed form if we use MAE, though this does not mean we cannot solve it to get the minimizer.
 * Median is robust to outliers, while mean is not.
 * In summary, it depends on our data and problem. If many outliers, you can consider use MAE as our objective function.
+* Another comment here is that: if your underlying model is Gaussian without regularization, then minimizer of MSE is the same with MLE.
 
-## 5. 
+## 5. What error metric would you use to evaluate how good a binary classifier is? What if the classes are imbalanced? What if there are more than 2 groups?
+* We can consider error rate, AUC area, recall, precision, F1 score to evaluate a binary classifier. Recall, precision and F1 score can be considered if we have imbalanced data.
+* Confusion matrix to get error rate, recall, precision for each class (one vs all other).
+* [Find better answer for this question.](https://github.com/kojino/120-Data-Science-Interview-Questions/blob/master/predictive-modeling.md#2-what-could-be-some-issues-if-the-distribution-of-the-test-data-is-significantly-different-than-the-distribution-of-the-training-data) I should mention the pros and cons for each metric like answer in this link.
+
+
+
+
 
