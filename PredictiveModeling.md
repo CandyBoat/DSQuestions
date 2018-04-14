@@ -29,6 +29,29 @@
 ## 6. What are various ways to predict a binary response variable? Can you compare two of them and tell me when one would be more appropriate? What’s the difference between these? (SVM, Logistic Regression, Naive Bayes, Decision Tree, etc.)
 * We can consider logistic regression, SVM, Naive Bayes, LDA/QDA, decision tree, random forest, gradient boosting tree, neural network.
 * Logistic regression: 
+   ⋅⋅⋅ pros: vey easy to build logisitc regression model, generates linear (of the input predictors) decision boudary. Also easy to interpret because it can generate estimated parameters so that we can interpret the relationship between predictor and response variable.
+   ⋅⋅⋅ cons: high bias, needs to do feature engineering carefully
+* SVM:
+  ⋅⋅⋅ pros: works well when you have linear unseperable cases, then can leverage kernel tricks to find the unlinear boundry.
+  ⋅⋅⋅ cons: data size should be relative large.
+* Naive Bayes:
+  ⋅⋅⋅ pros: 
+  ⋅⋅⋅ cons: assume each predictor is independent with each other, which might not be true in most cases.
+* LDA/QDA:
+  ⋅⋅⋅
+  ⋅⋅⋅
+* Decision tree:
+  ⋅⋅⋅ pros: easy to interpret, robust to outliers
+  ⋅⋅⋅ cons: high bias, high variance
+* Random Forest:
+  ⋅⋅⋅ pros: a bagging method, low bias, robust to outliers
+  ⋅⋅⋅ cons: lose interpretability though you can look at variable importance plot and partial dependency plot to have a sense of importance
+* gradient tree:
+  ⋅⋅⋅ pros: a boosting method, combine weak learners to get a strong learner, so usually model has low bias
+  ⋅⋅⋅ cons: needs large data size, tuning parameters needs more computation than the methods mentioned above, likely to overfit (need to do cross validation), lose interpretability though you can look at variable importance plot and partial dependency plot to have a sense of importance
+* Neural network:
+  ⋅⋅⋅ pros: low bias
+  ⋅⋅⋅ cons: need a lot of data, likely to overfit (add regularization), expensive computation, lose interpretability
 
 
 
