@@ -53,7 +53,17 @@
   * pros: low bias
   * cons: need a lot of data, likely to overfit (add regularization), expensive computation, lose interpretability
 
+## 7. What is regularization and where might it be helpful? What is an example of using regularization in a model?
+* We usually add L1 (LASSO) or L2 (ridge) penalty on the objective function, where L1 norm is the sum of the absolute value of the estimated parameters and we usually do not count intercept term, L2 norm is the sum of the sqaured term of the estimated parameters. We can also use them both, which is called elastic net.
+* It is useful:
+  * to avoid overfitting.
+  * when number of obs is less than the number of predictor.
+  * to deal with correlated variables.
+  * LASSO can be used to do variable selection.
+* We always use regularization when we have a lot of variables, especially when the variables are highly correlated. Examples are using regularization in neural network, in logistic regression, etc.
 
+
+ 
 
 
 
