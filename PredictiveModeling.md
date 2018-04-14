@@ -70,7 +70,7 @@
 * This is a regression problm.
 * By looking at the data size and the number of predictors we have in our data, we can decide which model to choose:
   * if large N, consider nerual network, gradient boosting method. But those type of model needs more computation power and time, so we should also consider this.
-  * if small N and large p, then consider dimension reduction, regularization, then use simple traditional model, like regression.
+  * if small N and large p, then consider dimension reduction, regularization, then use simple traditional model, like regression. Or a traditional time series model.
   
   
 
