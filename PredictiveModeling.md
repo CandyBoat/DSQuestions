@@ -13,6 +13,12 @@
 * From optimization perspective: try objecitive function that are not senstitive to outliers, like huber loss instead of sum of squared error.
 * In general, you should ask why outliers like this, if they are data input issue or something else might give you other insights about the data. For data input issue, you can delete them if they are not a lot.
 
-## 4. What are some differences you would expect in a model that minimizes squared error, versus a model that min- imizes absolute error? In which cases would each error metric be appropriate?
-* 
+## 4. What are some differences you would expect in a model that minimizes squared error, versus a model that minimizes absolute error? In which cases would each error metric be appropriate?
+* Following is the answer from [Ben Packer on Quora](https://www.quora.com/How-would-a-model-change-if-we-minimized-absolute-error-instead-of-squared-error-What-about-the-other-way-around)
+* Minimizing sqaured error you get mean, minimizing absolute error you get median.
+* Minimizing squared error is easy to solve becuase the derivatives of the objective function are continuous, we can set the derivative to be 0 then get the minimizer. While we do not have closed form if we use MAE, though this does not mean we cannot solve it to get the minimizer.
+* Median is robust to outliers, while mean is not.
+* In summary, it depends on our data and problem. If many outliers, you can consider use MAE as our objective function.
+
+## 5. 
 
