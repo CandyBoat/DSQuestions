@@ -41,12 +41,12 @@
   * pros: works well when the assumption meets.
   * cons: assume classes are from multivariate Gaussian distribution, LDA even assumes the variance matrix are the same across different classes, QDA assumes different.
 * Decision tree:
-  * pros: easy to interpret, robust to outliers
+  * pros: easy to interpret, robust to outliers, good with categorical variable
   * cons: high bias, high variance
 * Random Forest:
   * pros: a bagging method, low bias, robust to outliers
   * cons: lose interpretability though you can look at variable importance plot and partial dependency plot to have a sense of importance
-* gradient tree:
+* Gradient Tree:
   * pros: a boosting method, combine weak learners to get a strong learner, so usually model has low bias
   * cons: needs large data size, tuning parameters needs more computation than the methods mentioned above, likely to overfit (need to do cross validation), lose interpretability though you can look at variable importance plot and partial dependency plot to have a sense of importance
 * Neural network:
