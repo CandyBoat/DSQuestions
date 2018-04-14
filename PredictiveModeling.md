@@ -26,7 +26,9 @@
 * Confusion matrix to get error rate, recall, precision for each class (one vs all other).
 * [Find better answer for this question.](https://github.com/kojino/120-Data-Science-Interview-Questions/blob/master/predictive-modeling.md#2-what-could-be-some-issues-if-the-distribution-of-the-test-data-is-significantly-different-than-the-distribution-of-the-training-data) I should mention how to construct each metric and the pros and cons for each metric like answer in this link. For example, pros for error rate is easy to interpret, but can be helpless when we have unbalanced data. AUC curve is constructed with false positive rate on x axis, true positive rate on y axis, it measures what the two rates when we set different threshold of 1. Pros is that we do not need to have a threshold if our predicted value is probability and we can use this to find the optimal threshold. Cons is that we cannot explain the uncertainty of the model. Recall is the number of correct predicted positive devided by all true positive (among all true cases how many we find them), precision is the number corrected true positive divided by all predicted positive (among all cases we predicted as truth how many of them are actually true). F1 score can balance precision and recall.
 
-## 6. 
+## 6. What are various ways to predict a binary response variable? Can you compare two of them and tell me when one would be more appropriate? What’s the difference between these? (SVM, Logistic Regression, Naive Bayes, Decision Tree, etc.)
+* We can consider logistic regression, SVM, Naive Bayes, LDA/QDA, decision tree, random forest, gradient boosting tree, neural network.
+* Logistic regression: 
 
 
 
