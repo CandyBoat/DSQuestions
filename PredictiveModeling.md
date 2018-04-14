@@ -72,6 +72,8 @@
   * if large N, consider nerual network, gradient boosting method. But those type of model needs more computation power and time, so we should also consider this.
   * if small N and large p, then consider dimension reduction, regularization, then use simple traditional model, like regression. Or a traditional time series model.
   
+## 10. How could you collect and analyze data to use social media to predict the weather?
+* 
   
 
  
