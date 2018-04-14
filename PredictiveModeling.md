@@ -62,6 +62,17 @@
   * LASSO can be used to do variable selection.
 * We always use regularization when we have a lot of variables, especially when the variables are highly correlated. Examples are using regularization in neural network, in logistic regression, etc.
 
+## 8. Why might it be preferable to include fewer predictors over many?
+* A complex model tends to overfit, so we usually want a simple model.
+
+## 9. Given training data on tweets and their retweets, how would you predict the number of retweets of a given tweet after 7 days after only observing 2 days worth of data?
+* Looks like we only have 2 days of data, then a big assumption here is that 2 days can be extrapolate to 7 days, meaning no weekend weekday seasonality, no big event influence, no holiday influence.
+* This is a regression problm.
+* By looking at the data size and the number of predictors we have in our data, we can decide which model to choose:
+  * if large N, consider nerual network, gradient boosting method. But those type of model needs more computation power and time, so we should also consider this.
+  * if small N and large p, then consider dimension reduction, regularization, then use simple traditional model, like regression.
+  
+  
 
  
 
