@@ -5,4 +5,4 @@
 * Start EDA, visulize the data, can try univariate type plots, bi-variate plot, check potential correlation, outliers, missing value.
 
 ## 2. What could be some issues if the distribution of the test data is significantly different than the distribution of the training data?
-* If we have distribution shift between training and test, then model fits training data well might not perform well on test data.
+* If we have distribution shift between training and test, then model fits training data well might not perform well on test data. This can happen when you split your test and training by time (data change over time),
