@@ -1,8 +1,8 @@
 ## 1.In an A/B test, how can you check if assignment to the various buckets was truly random?
 * Compare metrics that will not be influenced by the test, those invariant metrics should be similar across control and test group.
 * Compare distribution of profile across different groups, like platform proportion, country, age, gender, etc.
-** Visually look at bar chart, box plot, density curve.
-** Can consider use stat tests (like multiple comparison if you have more than 2 groups/buckets), parameter or non-parameter if data is not normally distributed. Can consider using chi-square test to see if buckets are statitically differnt for a variable tested when this varaible is categorical. Can consider a ANOVA or non-paramtetric method like KS test to see if they are different if variable is continuous.
+  * Visually look at bar chart, box plot, density curve.
+  * Can consider use stat tests (like multiple comparison if you have more than 2 groups/buckets), parameter or non-parameter if data is not normally distributed. Can consider using chi-square test to see if buckets are statitically differnt for a variable tested when this varaible is categorical. Can consider a ANOVA or non-paramtetric method like KS test to see if they are different if variable is continuous.
 
 ## 2. What might be the benefits of running an A/A test, where you have two buckets who are exposed to the exact same product?
 * AA test can be used to test if the metrics you defined are too sensitive. For example, in AA test, you would not want to see metrics shift, if you see significant difference in metrics from AA test, then you get insights that this metric is too sensitive.
